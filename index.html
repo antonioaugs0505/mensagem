@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oiiii</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<style>
+    
+</style>
+
+
+<body>
+
+    <div class="painel">
+
+        <div class="texto">
+            <h1>Você tá mais que convidada para sair comigo amanhã pós meu primeiro dia de trabalho</h1>
+            <h2>Impossivel recusar esse convite!</h2>
+        </div>
+    
+    <img src="./img/gifs-fofos-de-amor-5.gif" alt="">  
+    
+    <div class="botao">
+        <button javascript: abrir(); id="sim">Sim!</button>
+        <button onmouseover="fuja()" id="nao">Não</button>
+    </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+        <h3>Que bom que você aceitou kkk</h3>
+        <h4>Local: Shopping mais perto</h4>
+        <h4>Horas: 19:30</h4>
+        <h4>Ve o filminho da sua escolha</h4>
+        <h3>Te espero kkkkkk</h3>
+
+        <a href="" javascript: fechar() id="fechar">fechar</a>
+
+
+    </div>
+
+
+<script>
+    
+    function fuja(){
+        var botaoNao = document.getElementById('nao')
+        var larguraJanela = window.innerWidth
+        var alturaJanela = window.innerHeight
+
+
+        var maxX =larguraJanela - botaoNao.offsetWidth
+        var maxY =alturaJanela - botaoNao.offsetHeight
+
+        var aleatorioX = Math.floor(Math.random() * maxX)
+        var aleatorioY = Math.floor(Math.random() * maxY)
+
+        botaoNao.style.left = aleatorioX + "px"
+        botaoNao.style.top = aleatorioY + "px"
+
+    }
+
+    botaoSim = document.getElementById('sim')
+    botaoSim.addEventListener('click', ()=>{
+        document.getElementById('popup').style.display="block"
+    })
+
+    fechar = document.getElementById('fechar')
+    fechar.addEventListener('click', ()=>{
+        document.getElementById('popup').style.display="none"
+    })
+   
+    
+
+
+</script>
+
+
+</body>
+</html>

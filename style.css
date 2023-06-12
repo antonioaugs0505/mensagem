@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(178,255,248);
+    background: linear-gradient(36deg, rgba(178,255,248,1) 0%, rgba(41,191,253,1) 49%, rgba(0,112,255,1) 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.painel{
+    margin: 30px auto ;
+    background: rgba(255, 255, 255, 0.658);
+    width: 80%;
+    height: 120vh;
+    border-radius:20px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: #2baaff;
+    
+}
+
+h1{
+    font: 2rem;
+    margin: 20px;
+}
+
+h2{
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.painel img{
+    margin: 0 auto;
+    width: 400px;
+}
+
+.botao{
+    width: 100%;
+    background-color: aqua;
+}
+
+#sim{
+    position: absolute;
+    height: 60px;
+    width: 150px;
+    background: #2baaff;
+    border: 4px solid #ffffff;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    left: 20%;
+}
+
+#nao{
+    position: absolute;
+    height: 60px;
+    width: 150px;
+    background: #2baaff;
+    border: 4px solid #ffffff;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    right: 20%;
+}
+
+#sim:hover{
+    background-color: #fff;
+    color: #2baaff;
+    border: 4px solid #2baaff;
+}
+
+.popup{
+    position: fixed;
+    top: 0; right: 0;
+    bottom:0; left: 0;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    border: solid 3px #ffffff;
+    background-color: #2baaff8e;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    display: none;
+}
+
+.popup h3{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+.popup h4{
+    margin: 10px;
+}
+
+.popup a{
+    background: #ffffff;
+    border: 4px solid #2baaff;
+    border-radius: 30px;
+    color: #2baaff;
+    font-size: 1rem;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.popup a:hover{
+    background: #2baaff;
+    border: 4px solid #ffffff;
+
+    color: #ffffff;
+}
