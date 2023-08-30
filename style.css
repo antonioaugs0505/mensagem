@@ -6,14 +6,15 @@
 }
 
 body{
-    background: rgb(178,255,248);
-    background: linear-gradient(36deg, rgba(178,255,248,1) 0%, rgba(41,191,253,1) 49%, rgba(0,112,255,1) 100%);
+    background: rgb(255,228,237);
+    background: linear-gradient(0deg, rgba(255,228,237,1) 0%, rgba(255,108,176,1) 50%, rgba(255,27,160,1) 100%);
     font-family: 'Raleway', sans-serif;
+    width: auto;
 }
 
 .painel{
-    margin: 30px auto ;
-    background: rgba(255, 255, 255, 0.658);
+    margin: 20px auto ;
+    background: rgba(255, 220, 248, 0.445);
     width: 80%;
     height: 150vh;
     border-radius:20px;
@@ -21,60 +22,67 @@ body{
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    color: #2baaff;
     
 }
 
-h1{
-    font: 2rem;
-    margin: 20px;
+.painel h2{
+    margin-bottom: 30px;
 }
 
-h2{
-    margin-top: 20px;
-    color: #ffffff;
+.painel h1{
+    margin: 10px;
+    color: #ff1ba0;
     text-decoration: underline;
 }
 
+
 .painel img{
-    max-width: 400px;
+    margin: auto;
+    max-width: 200px;    
+    box-shadow: -50px -50px 0 -40px #ff1ba0, 50px 50px 0 -40px #ff6cb0;
+}
+
+.pergunta{
+    color: #ff0095;
+    margin: 25px;
 }
 
 .botao{
     width: 100%;
-    background-color: aqua;
 }
 
 #sim{
     position: absolute;
-    height: 40px;
-    width: 70px;
-    background: #2baaff;
-    border: 4px solid #ffffff;
+    height: 50px;
+    width: 140px;
+    background: #ff0095;
+    border: 4px solid #ff6cb0;
     border-radius: 30px;
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
-    left: 20%;
+    left: 50%;
+    margin: 5px;
 }
 
 #nao{
     position: absolute;
-    height: 40px;
-    width: 70px;
-    background: #2baaff;
-    border: 4px solid #ffffff;
+    height: 50px;
+    width: 140px;
+    background: #ff0095;
+    border: 4px solid #ff6cb0;
     border-radius: 30px;
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
-    right: 20%;
+    right: 50%;
+    margin: 5px;
 }
 
 #sim:hover{
-    background-color: #fff;
-    color: #2baaff;
-    border: 4px solid #2baaff;
+    background-color: #ff6cb0;
+    color: #ff0095;
+    border: 4px solid #ff0095;
 }
 
 .popup{
@@ -84,9 +92,9 @@ h2{
     margin: auto;
     width: 80%;
     height: 80%;
-    border: solid 3px #ffffff;
-    background-color: #2baaff8e;
-    color: #fff;
+    box-shadow: -50px -50px 0 -40px #ff1ba0, 50px 50px 0 -40px #ff1ba0;
+    background-color: #ffa1cd;
+    color: #000000;
     text-align: center;
     align-items: center;
     display: none;
@@ -102,10 +110,10 @@ h2{
 }
 
 .popup a{
-    background: #ffffff;
-    border: 4px solid #2baaff;
+    background: #ff6cb0;
+    border: 4px solid #ff0095;
     border-radius: 30px;
-    color: #2baaff;
+    color: #ff0095;;
     font-size: 1rem;
     padding: 15px 50px;
     text-transform: uppercase;
