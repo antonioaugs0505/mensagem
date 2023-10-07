@@ -6,15 +6,16 @@
 }
 
 body{
-    background: rgb(255,228,237);
-    background: linear-gradient(0deg, rgba(255,228,237,1) 0%, rgba(255,108,176,1) 50%, rgba(255,27,160,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, #420211 50%, #5e1224 100%);
     font-family: 'Raleway', sans-serif;
     width: auto;
+    color: #fff;
 }
 
 .painel{
     margin: 20px auto ;
-    background: rgba(255, 220, 248, 0.445);
+    background: #ff7a9933 ;
     width: 80%;
     height: 150vh;
     border-radius:20px;
@@ -22,6 +23,8 @@ body{
     padding-top: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     
 }
 
@@ -31,7 +34,7 @@ body{
 
 .painel h1{
     margin: 10px;
-    color: #ff1ba0;
+    color: #e9456c;
     text-decoration: underline;
 }
 
@@ -39,11 +42,11 @@ body{
 .painel img{
     margin: auto;
     max-width: 200px;    
-    box-shadow: -50px -50px 0 -40px #ff1ba0, 50px 50px 0 -40px #ff6cb0;
+    box-shadow: -50px -50px 0 -40px #5e1224, 50px 50px 0 -40px #5e1224;
 }
 
 .pergunta{
-    color: #ff0095;
+    color: #e9456c;
     margin: 25px;
 }
 
@@ -54,11 +57,11 @@ body{
 #sim{
     position: absolute;
     height: 50px;
-    width: 140px;
-    background: #ff0095;
-    border: 4px solid #ff6cb0;
+    width: 150px;
+    background: #e6456b;
+    border: 4px solid #5e1224;
     border-radius: 30px;
-    color: white;
+    color: #5e1224;
     font-size: 1rem;
     text-transform: uppercase;
     left: 50%;
@@ -68,11 +71,11 @@ body{
 #nao{
     position: absolute;
     height: 50px;
-    width: 140px;
-    background: #ff0095;
-    border: 4px solid #ff6cb0;
+    width: 150px;
+    background: #e6456b;
+    border: 4px solid #5e1224;
     border-radius: 30px;
-    color: white;
+    color: #5e1224;
     font-size: 1rem;
     text-transform: uppercase;
     right: 50%;
@@ -80,9 +83,9 @@ body{
 }
 
 #sim:hover{
-    background-color: #ff6cb0;
-    color: #ff0095;
-    border: 4px solid #ff0095;
+    background-color: #5e1224;
+    color: #e6456b;
+    border: 4px solid #e6456b;
 }
 
 .popup{
@@ -92,9 +95,9 @@ body{
     margin: auto;
     width: 80%;
     height: 80%;
-    box-shadow: -50px -50px 0 -40px #ff1ba0, 50px 50px 0 -40px #ff1ba0;
-    background-color: #ffa1cd;
-    color: #000000;
+    box-shadow: -50px -50px 0 -40px #e6456b, 50px 50px 0 -40px #e6456b;
+    background-color: #5e1224;
+    color: #e6456b;
     text-align: center;
     align-items: center;
     display: none;
@@ -110,10 +113,13 @@ body{
 }
 
 .popup a{
-    background: #ff6cb0;
-    border: 4px solid #ff0095;
+    background-color: #5e1224;
+    color: #e6456b;
+    border: 4px solid #e6456b;
     border-radius: 30px;
-    color: #ff0095;;
+  
+    border-radius: 30px;
+
     font-size: 1rem;
     padding: 15px 50px;
     text-transform: uppercase;
@@ -122,8 +128,7 @@ body{
 }
 
 .popup a:hover{
-    background: #2baaff;
-    border: 4px solid #ffffff;
-
-    color: #ffffff;
+    background-color: #e6456b;
+    color: #5e1224;
+    border: 4px solid #5e1224;
 }
